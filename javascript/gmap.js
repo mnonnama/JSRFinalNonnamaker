@@ -9,31 +9,46 @@ const btnSubmit = document.querySelector('.btn-primary');
 
 btnSubmit.addEventListener('click', e => {
 	if( (apiKey.value === "") || (zoominput.value === "") || (latitude.value === "")  || (longitude.value === "") ) {
-		errortext.outerHTML ="<p>please fill out all values</p>"
+		errortext.outerHTML ="<p class='errormessage'>please fill out all values</p>"
 		return;
 	}
 	let zoom = parseInt(zoominput.value);
 	let lat = parseInt(latitude.value);
-	let lon = parseInt(longitude.value);
+	let long = parseInt(longitude.value);
 	let apival = apiKey.value;
 	console.log(apival)
-	var gmapcall = document.createElement('script');
-	gmapcall.setAttribute('src', 'https://maps.googleapis.com/maps/api/js?key=' + apival + '&callback=initMap');
-	document.body.appendChild(gmapcall);
-	function initMap(lat, long, zoom) {
+	
+	function initMap() {
+		var map;
 		    map = new google.maps.Map(document.getElementById('map'), {
 		      center: {lat: lat, lng: long},
 		      zoom: zoom,
-		       
 		    });
+		    console.log(zoom);
   	}
-  	initMap(lat, lon, zoom);
+  	
 	var gmapcall = document.createElement('script');
 	gmapcall.setAttribute('src', 'https://maps.googleapis.com/maps/api/js?key=' + apival + '&callback=initMap');
 	document.body.appendChild(gmapcall);
 
 	
 })
+
+	// const output = `
+	// <code>
+	// 	<div id="map"></div>
+ //    	<script>
+	// 	function initMap() {
+	// 	    map = new google.maps.Map(document.getElementById('map'), {
+	// 	      center: {lat: ${lat}, lng: ${long}},
+	// 	      zoom: ${zoom},
+		       
+	// 	    });
+	// 	  }
+	// 	</script>
+	// 	<script src="https://maps.googleapis.com/maps/api/js?key=${apival}&callback=initMap" async defer></script>
+	// </code>
+	// `
 
 // const  = newShoppingListItemCtown(shoppingInputctwon.value, priceInputctown.value);
 	// ctownfoodPrice += parseInt(priceInputctown.value);
