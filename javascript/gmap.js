@@ -18,7 +18,7 @@ btnSubmit.addEventListener('click', e => {
 	let apival = apiKey.value;
 	console.log(apival)
 	
-	function initMap() {
+	function initMap(lat, long, zoom) {
 		var map;
 		    map = new google.maps.Map(document.getElementById('map'), {
 		      center: {lat: lat, lng: long},
