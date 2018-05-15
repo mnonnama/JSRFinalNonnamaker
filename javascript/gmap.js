@@ -34,39 +34,3 @@ btnSubmit.addEventListener('click', e => {
 	
 })
 
-	// const output = `
-	// <code>
-	// 	<div id="map"></div>
- //    	<script>
-	// 	function initMap() {
-	// 	    map = new google.maps.Map(document.getElementById('map'), {
-	// 	      center: {lat: ${lat}, lng: ${long}},
-	// 	      zoom: ${zoom},
-		       
-	// 	    });
-	// 	  }
-	// 	</script>
-	// 	<script src="https://maps.googleapis.com/maps/api/js?key=${apival}&callback=initMap" async defer></script>
-	// </code>
-	// `
-
-// const  = newShoppingListItemCtown(shoppingInputctwon.value, priceInputctown.value);
-	// ctownfoodPrice += parseInt(priceInputctown.value);
-	// shoppingInputctwon.value = '';
-	// priceInputctown.value = '';
-	// renderctown();
-// function initMap() {
-//     map = new google.maps.Map(document.getElementById('map'), {
-//       center: {lat: -34.397, lng: 150.644},
-//       zoom: 8,
-       
-//     });
-//   }
-
-//AIzaSyAMYg4o2gl9E2dTq7DSai0n5K2kLScM0AU
-
-// var my_awesome_script = document.createElement('script');
-
-// my_awesome_script.setAttribute('src','https://maps.googleapis.com/maps/api/js?key=AIzaSyAMYg4o2gl9E2dTq7DSai0n5K2kLScM0AU&callback=initMap');
-
-// document.body.appendChild(my_awesome_script);
