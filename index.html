@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
+
 <div class="page-center">
     <h1>Build your own Google Map Embed!</h1>
     <p><a href="https://developers.google.com/maps/documentation/javascript/tutorial" target="_blank">Link to the Documentation</a></p>
@@ -21,16 +22,26 @@
     <input type="text" class="form-field" id="latitude" placeholder="Latitude">
     
     <input type="text" class="form-field" id="longitude" placeholder="Longitude">
-    <div class="error"></div>
+    
     <button type="submit" class="btn btn-primary">Generate Embed</button>
+
   </div>
+  <div class="error"></div>
 </div>
+
+<div class="output-fields">
+
+<div class="map-output">
   <h1> Map Output </h1>
     <div id="map"></div>
+</div>
 
-
-  <div id="embed-output"></div>
-
+  <div class="embed-output">
+   <h1> Embed Output </h1>
+   <div id="embed-print"></div>
+   </div>
+   
+</div>
 
 
   </body>
