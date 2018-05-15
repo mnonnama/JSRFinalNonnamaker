@@ -1,7 +1,49 @@
-<head>
- 
-</head>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 
-<body>
-  <h1>N final project</h1>
-</body>
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+<div class="page-center">
+    <h1>Build your own Google Map Embed!</h1>
+    <p><a href="https://developers.google.com/maps/documentation/javascript/tutorial" target="_blank">Link to the Documentation</a></p>
+    <div class="form-gmap">
+    
+    <input type="text" class="form-field" id="apikey" placeholder="API Key">
+   
+    <input type="text" class="form-field" id="zoom" placeholder="Zoom">
+    
+    <input type="text" class="form-field" id="latitude" placeholder="Latitude">
+    
+    <input type="text" class="form-field" id="longitude" placeholder="Longitude">
+    <div class="error"></div>
+    <button type="submit" class="btn btn-primary">Generate Embed</button>
+  </div>
+</div>
+  <h1> Map Output </h1>
+    <div id="map"></div>
+
+
+  <div id="embed-output"></div>
+
+
+
+  </body>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script src="javascript/gmap.js"></script>
+
+ 
+
+
+
+
+  </body>
+</html>
