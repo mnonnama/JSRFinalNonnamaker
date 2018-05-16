@@ -5,6 +5,7 @@ const latitude = document.querySelector('#latitude');
 const longitude = document.querySelector('#longitude');
 const errortext = document.querySelector('.error');
 const btnSubmit = document.querySelector('.btn-primary');
+const output = document.querySelector('#embed-print')
 let clicked = false;
 
 btnSubmit.addEventListener('click', e => {
@@ -35,7 +36,35 @@ var myLatlng = new google.maps.LatLng(lat,long);
              
             }; 
             var map = new google.maps.Map(document.getElementById("map"), myOptions);
-} , 3000);
+} , 1000);
+
+
+const OutputCode = `
+<xmp>
+
+<div id="map"></div>
+<script>
+    var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: ${lat}, lng: ${long}},
+          zoom: 8
+        });
+      }
+ </script>
+<script 
+src="https://maps.googleapis.com/maps/api/js?key=${apival}&callback=initMap"
+async defer></script>
+</xmp>
+
+`;
+
+
+
+console.log(OutputCode)
+
+output.innerHTML = OutputCode;
+
  zoominput.value = '';
  latitude.value ='';
  longitude.value = '';
