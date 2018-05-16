@@ -29,12 +29,16 @@
 }
 
 .map-output{
-	width: 40%;
+	width: 50%;
 	background: #eee;
 	margin-right: .5%;
 }
 
 .embed-output{
-	width: 60%;
+	width: 50%;
 	background: #eee;
+}
+
+xml{
+	padding: 3%;
 }
