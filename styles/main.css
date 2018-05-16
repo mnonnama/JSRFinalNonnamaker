@@ -1,5 +1,5 @@
 .page-center{
-	max-width: 1200px;
+	max-width: 1500px;
 	margin: 3% auto;
 }
 .form-gmap{
@@ -16,7 +16,7 @@
 }
 
 .output-fields{
-	max-width:1200px;
+	max-width:1500px;
 	margin: 3% auto;
 	display: flex;
 
@@ -29,12 +29,12 @@
 }
 
 .map-output{
-	width: 60%;
+	width: 40%;
 	background: #eee;
 	margin-right: .5%;
 }
 
 .embed-output{
-	width: 40%;
+	width: 60%;
 	background: #eee;
 }
